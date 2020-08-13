@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "Model Test",
-      "setup": "cd HelloWorld/",
+      "setup": "dotnet build",
       "run": "dotnet test",
       "input": "",
       "output": "",
