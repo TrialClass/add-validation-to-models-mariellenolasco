@@ -6,8 +6,9 @@
       build:
         name: Autograding
         runs-on: ubuntu-latest
-        env:
-            DOTNET_CLI_HOME:  ./HelloWorld
         steps:
           - uses: actions/checkout@v2
+          - uses: actions/setup-dotnet@v1
+            with:
+                dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
           - uses: education/autograding@v1
