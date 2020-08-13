@@ -6,6 +6,8 @@
       build:
         name: Autograding
         runs-on: ubuntu-latest
+        env:
+            DOTNET_CLI_HOME:  ./HelloWorld
         steps:
           - uses: actions/checkout@v2
           - uses: education/autograding@v1
