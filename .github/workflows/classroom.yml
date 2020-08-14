@@ -7,7 +7,7 @@
         name: Autograding
         runs-on: ubuntu-latest
         env:
-            DOTNET_CLI_HOME: ./HelloWorld 
+            DOTNET_CLI_HOME: ./HelloWorld/ModelTest 
         steps:
              - uses: actions/checkout@v2
              - uses: actions/setup-dotnet@v1
